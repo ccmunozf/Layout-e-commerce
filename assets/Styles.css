@@ -1,0 +1,23 @@
+.Principal {
+    border: 1px solid;
+    width: 100%;
+    text-align: center;
+    background-color: #111184;
+    color: white;
+}
+body{
+    background-color: cornsilk;
+
+}
+
+.sidebar{
+    display: flex;
+    height: 100%;
+    border: 3px solid red;
+    flex-direction: column;
+    text-align: start;
+    width: 25%;
+    
+
+}
+
