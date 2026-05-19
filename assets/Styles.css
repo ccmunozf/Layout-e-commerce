@@ -1,48 +1,64 @@
-.Principal {
-    border: 1px solid;
-    width: 100%;
-    text-align: center;
-    background-color: #111184;
-    color: white;
-}
 body{
-    background-color: cornsilk;
+    text-align: center;
+    background-color: beige;
+
 
 }
-
-.sidebar{
-
-    display: flex;
-    height: 100%;
-    border: 3px solid red;
-    flex-direction: column;
-    text-align: start;
-    width: 25%;
-
-}
-
-.productos{
+.Container{
     display: grid;
-    width: 75%;
+    grid-template-areas: "header header "
+                        "menu_lateral principal "
+                         "footer footer";
+    gap: 10%;
+                       
+}
+
+.header{
+    grid-area: header;
+    
+
+}
+.menu_lateral{
+    display: flex;
+    grid-area: menu_lateral;
+    flex-direction: column;
+    border: 1px solid red;
+    text-align: center;
+    width: 150%;
+    
+}
+
+.principal{
+    display: grid;
+    grid-area: principal;
     grid-template-columns: auto auto auto;
     gap: 10%;
 }
-.item img{
-    
-    width: 150px;
-    height: auto;
+
+.footer{
+    grid-area: footer;
+    border: 1px solid #111184;
+   background-color: white;
+   color: gray;
 }
 
-.container{
-    display: flex;
-    width: 75%;
+.Container{
+    display: grid;
+    grid-template-areas: "header header header header"
+                        "menu_lateral principal principal principal"
+                         "footer footer footer footer";
+                      
 }
-.pie_de_pagina{
-    border: 1px solid black;
+
+.principal img{
+    width: 300px;
+    height: 300px;
+
+
+}
+
+button{
+    width: 150px;
     background-color: #111184;
     color: white;
-    text-align: center;
-
 }
-
-
