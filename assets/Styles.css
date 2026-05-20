@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    background-color: beige;
+    background-color: white;
 
 
 }
@@ -10,7 +10,8 @@ body{
                         "menu_lateral principal "
                          "footer footer";
     gap: 10%;
-                       
+    margin: 10px;
+                        
 }
 
 .header{
@@ -25,10 +26,10 @@ body{
     display: flex;
     grid-area: menu_lateral;
     flex-direction: column;
-    border: 1px solid red;
     text-align: center;
     width: 200px;
     height: 100%;
+    
     
 }
 
@@ -37,6 +38,8 @@ body{
     grid-area: principal;
     grid-template-columns: auto auto auto;
     gap: 10%;
+    padding: -500%;
+    
     
     
 }
@@ -58,14 +61,18 @@ body{
 
 .principal img{
     width: 300px;
-    height: 300px;
+    height: 350px;
+
     
 
 }
 
 button{
-    width: 150px;
+    width: 300px;
     background-color: #111184;
     color: white;
     height: 10%;
+    
+
+
 }
